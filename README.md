@@ -1,1 +1,1 @@
-Some english words and phrase that you can learn
+Some english words and phrases that you can learn
