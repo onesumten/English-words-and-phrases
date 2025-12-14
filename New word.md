@@ -550,3 +550,4 @@
 549. trolley n.四轮小推车
 550. 表示足够的：adequate->sufficient->ample->enough
 551. the key wrinkle 关键点
+552. aisle n.过道
