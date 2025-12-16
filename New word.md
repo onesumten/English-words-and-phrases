@@ -551,3 +551,4 @@
 550. 表示足够的：adequate->sufficient->ample->enough
 551. the key wrinkle 关键点
 552. aisle n.过道
+553. terra n.土地
