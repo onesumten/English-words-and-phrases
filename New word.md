@@ -38,8 +38,8 @@
 38. radical adj.根本的，激进的 n.激进分子
 39. rational adj.理智的 
 40. eligible adj.有资格的
-41. qualify for 有资格参加（We decide go to this place when we qualify for the competition）
-42. qualify as 取得.......的资格（He qualified as a doctor this year)
+41. qualify for 有资格参加(We decide go to this place when we qualify for the competition)
+42. qualify as 取得.......的资格(He qualified as a doctor this year)
 43. liability n.债务，责任。隐患，障碍
 44. allergy n.过敏症 skin allergy 皮肤过敏
 45. entail v.需要，牵涉，遗传
@@ -70,7 +70,7 @@
 70. chute n.滑道
 71. streak n.条纹，一连串，倾向
 72. e'vade v.逃避
-73. re‘gurgitate v.使反刍
+73. re'gurgitate v.使反刍
 74. barf v.呕吐(俚语)
 75. vomit v.呕吐(正式用法)
 76. elusive adj.难以捉摸的
@@ -95,9 +95,9 @@
 95. foster v.收养，抚育，培养 adj.所抚养的
 96. sanction n.强硬措施，制裁，支持
 97. scheme n.阴谋，方案，计划 v.计划，密谋
-98. con‘strain n.限制，约束
+98. con'strain n.限制，约束
 99. vi'bration n.持续震动
-100. pre’stigious adj.有威望的
+100. pre'stigious adj.有威望的
 101. fes'tivity n.欢庆
 102. shelve v.推迟处理,把.....放在架子上
 103. laid-back adj.轻松的
@@ -111,7 +111,7 @@
 111. poise n.沉着
 112. come up with 提出
 113. utmost adj.最大的，极度的 n.最大量
-114. to the letter 完全按照规则和指示执行(Carrying out instructions to the letter,完全照着指令执行，**一丝不差**，**严格遵守每个细节**)
+114. to the letter 完全按照规则和指示执行(Carrying out instructions to the letter,完全照着指令执行，**一丝不差**,**严格遵守每个细节**)
 115. anecdote n.趣闻，轶事
 116. advocacy n.主张，拥护
 117. energise v.激发，使有活力
@@ -129,7 +129,7 @@
 129. re'dundant adj.冗余的，被解雇的
 130. im'plicit adj.含蓄的，无保留的
 131. im'plicit properties 隐式属性
-132. com‘patible adj.兼容的
+132. com'patible adj.兼容的
 133. flank v.在.....的侧面 n.侧面
 134. slash v.劈砍，大幅削减 n.斜杠
 135. crude n.原油 adj.粗俗的，简陋的，未加修饰的
@@ -180,7 +180,7 @@
 180. a'llege v.指控
 181. con'ceive v.想象，想出，构想
 182. arbitrary adj.任意的
-183. corre‘spond to 相当于
+183. corre'spond to 相当于
 184. syntax n.语法规则
 185. tangible adj.有形的
 186. feasi'bility n.可行性
@@ -279,7 +279,7 @@
 279. proximity n.接近，附近
 280. approximate adj.近似的
 281. approximately adv.近似地(approximately equal 约等于)
-282. mire n.泥潭 （让人难以行走）v.陷入困境
+282. mire n.泥潭 (让人难以行走)v.陷入困境
 283. marsh n.湿地（一种湿地生态系统）
 284. designate v.委派，指派，命名
 285. hamster n.仓鼠
@@ -319,7 +319,7 @@
 319. en'cumber v.拖累
 320. in'competence n.不称职
 321. speck n.斑点，微粒
-322. modest adj.适度的（moderate）（有分寸感）
+322. modest adj.适度的(moderate)(有分寸感)
 323. cushion n.缓冲物，保护层，垫子，心理或经济缓冲 v.缓冲
 324. in'fest v.侵扰，滋生，寄生
 325. iceberg n.冰山
@@ -374,7 +374,7 @@
 374. coverage n.报道量，覆盖范围
 375. overrun n.泛滥成灾，超出限度 v.超过，泛滥
 376. di'sposal n.清除，处理
-377. stumble v.绊倒，失误，偶然发现（i stumble upon .....）
+377. stumble v.绊倒,失误,偶然发现(i stumble upon .....)
 378. rampant adj.猖獗的，无法控制的
 379. se'date adj.平静的 v,使镇静
 380. prag'matic adj.务实的，实事求是的
@@ -460,95 +460,93 @@
 460. hash out 详细讨论并解决，反复商议来确定细节
 461. regimen n.养生之道，生活规则
 462. under'standably adv.可理解地
-463. ha’rassment n.骚扰
-464. commuta’tivity n.交换性
-465. a’ssociativity n.结合性
+463. ha'rassment n.骚扰
+464. commuta'tivity n.交换性
+465. a'ssociativity n.结合性
 466. Expressive Completeness表达完备性
-467. Ne’gation n.否定
+467. Ne'gation n.否定
 468. mandatory adj.义务的
 469. geometric adj.几何的
 470. numeral n.数字 adj.数字的
-471. itemi’zation n.逐条记录
+471. itemi'zation n.逐条记录
 472. clause n.条款，从句
-473. pe’rimeter n.外围，周长
-474. enume’ration n.列举 
+473. pe'rimeter n.外围，周长
+474. enume'ration n.列举
 475. quantify v.量化
-476. e’quivalent adj.对等的
+476. e'quivalent adj.对等的
 477. Pixel n.像素
-478. e’llipse n.椭圆
+478. e'llipse n.椭圆
 479. polygon n.多边形
-480. o’paque adj.不透明的，晦涩的 n.不透明体
+480. o'paque adj.不透明的，晦涩的 n.不透明体
 481. generic adj.通用的，没商标的
-482. re’deemable adj.可偿还的，可挽救的
+482. re'deemable adj.可偿还的，可挽救的
 483. nightmarish adj.可怕的
 484. errant adj.偏离正路的，错误的
-485. de’duction n. 推论，减法，扣除额
-486. pre’condition n.前置条件
+485. de'duction n.推论，减法，扣除额
+486. pre'condition n.前置条件
 487. postcondition n.后置条件
 488. clause n.从句，分句，条款（法律）
-489. con‘nective n.连接词 adj.连接的
-490. con’junction n.结合，连体，同时发生
-491. dis’junction n.分离，提取，分裂
-492. re’cursive adj.递归的，循环的
-493. Pa’renthesis n.圆括号，插入曲，插曲
-494. ambi’guity n.模凌两可
+489. con'nective n.连接词 adj.连接的
+490. con'junction n.结合，连体，同时发生
+491. dis'junction n.分离，提取，分裂
+492. re'cursive adj.递归的，循环的
+493. Pa'renthesis n.圆括号，插入曲，插曲
+494. ambi'guity n.模凌两可
 495. precedence n.优先权
 496. thumb n.大拇指 v.向…..竖起大拇指
 497. syntax n.语法规则
-
-498. ---
-499. air scrubber n.空气净化器
-500. improvise v.临时制作
-501. fabricate 用于小制作 manufacture 用于流水线制作
-502. su'spense n.悬念，焦虑
-503. prosecute v.检举，告发
-504. be affiliated with 和....有隶属关系
-505. blue collar, flesh and blood worker 蓝领的，有血有肉的劳动者
-506. re'convene v.重新召集，重新开会
-507. pre'stigious adj.备受尊重的
-508. a'llege v.宣称，断言 = de'clare, announce, 
-509. coming to fruition 即将实现
-510. aside bringing back the dead 除了让死者复活（aside from = except for 除了.....之外）
-511. de'fy v.蔑视，公然反抗
-512. con'sole v.安慰 n.控制台
-513. per'suasive adj.能说服的
-514. colony n.殖民队
-515. a'llowance n.津贴，零用钱，补助
-516. infiltrate v.渗透
-517. secrecy n.保密
-518. paramount adj.至高的
-519. viable adj.能养活的，可行的
-520. fissure n.裂开，分歧 v.裂开
-521. formidable adj.可怕的
-522. de'terrence n.威慑，制止
-523. neutral adj.中立的
-524. with that out of the way 既然那件事已经处理完了
-525. sustaina'bility n.可持续性
-526. pre'sume v.推测
-527. con'sent n.准许，同意 v.同意 (consent to)
-528. contra'band n.走私，走私者，禁运品
-529. feasible adj.可行的
-530. obscure v.掩盖 adj.难以理解的,鲜为人知的
-531. un'enviable adj.繁琐的，苦难的 unenviable task 繁琐的任务
-532. utterly adv.完全地 = totally
-533. futile adj.无效的，无意义的 = useless
-534. swear by 极度相信
-535. silo n.筒仓，飞弹发射井
-536. dere'liction of duty 玩忽职守
-537. constitute v.组成，造成
-538. thoroughly adv.完全地，彻底地
-539. think on one's feet 随机应变
-540. posthumously adv.于身后
-541. foyer n.大厅，门厅，休息厅3
-542. allow for 把....计算在内，为....留出余地，允许
-543. ditch v.抛弃 n.沟渠
-544. weed n.杂草
-545. good vibe 好氛围
-546. a'mend v.修正
-547. garage n.车库
-548. snippet n.片段
-549. trolley n.四轮小推车
-550. 表示足够的：adequate->sufficient->ample->enough
-551. the key wrinkle 关键点
-552. aisle n.过道
-553. terra n.土地
+498. air scrubber n.空气净化器
+499. improvise v.临时制作
+500. fabricate 用于小制作 manufacture 用于流水线制作
+501. su'spense n.悬念，焦虑
+502. prosecute v.检举，告发
+503. be affiliated with 和....有隶属关系
+504. blue collar, flesh and blood worker 蓝领的，有血有肉的劳动者
+505. re'convene v.重新召集，重新开会
+506. pre'stigious adj.备受尊重的
+507. a'llege v.宣称，断言 = de'clare, announce, 
+508. coming to fruition 即将实现
+509. aside bringing back the dead 除了让死者复活(aside from = except for 除了.....之外)
+510. de'fy v.蔑视，公然反抗
+511. con'sole v.安慰 n.控制台
+512. per'suasive adj.能说服的
+513. colony n.殖民队
+514. a'llowance n.津贴，零用钱，补助
+515. infiltrate v.渗透
+516. secrecy n.保密
+517. paramount adj.至高的
+518. viable adj.能养活的，可行的
+519. fissure n.裂开，分歧 v.裂开
+520. formidable adj.可怕的
+521. de'terrence n.威慑，制止
+522. neutral adj.中立的
+523. with that out of the way 既然那件事已经处理完了
+524. sustaina'bility n.可持续性
+525. pre'sume v.推测
+526. con'sent n.准许，同意 v.同意 (consent to)
+527. contra'band n.走私，走私者，禁运品
+528. feasible adj.可行的
+529. obscure v.掩盖 adj.难以理解的,鲜为人知的
+530. un'enviable adj.繁琐的，苦难的 unenviable task 繁琐的任务
+531. utterly adv.完全地 = totally
+532. futile adj.无效的，无意义的 = useless
+533. swear by 极度相信
+534. silo n.筒仓，飞弹发射井
+535. dere'liction of duty 玩忽职守
+536. constitute v.组成，造成
+537. thoroughly adv.完全地，彻底地
+538. think on one's feet 随机应变
+539. posthumously adv.于身后
+540. foyer n.大厅,门厅,休息厅
+541. allow for 把....计算在内，为....留出余地，允许
+542. ditch v.抛弃 n.沟渠
+543. weed n.杂草
+544. good vibe 好氛围
+545. a'mend v.修正
+546. garage n.车库
+547. snippet n.片段
+548. trolley n.四轮小推车
+549. 表示足够的: adequate->sufficient->ample->enough
+550. the key wrinkle 关键点
+551. aisle n.过道
+552. terra n.土地
