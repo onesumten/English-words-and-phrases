@@ -551,4 +551,6 @@
 551. aisle n.过道
 552. terra n.土地
 553. guild n.工会
-554. zesty adj.兴致很高的 v.给....增添乐趣 
+554. zesty adj.兴致很高的 v.给....增添乐趣
+555. dispo'sition n.气质,天赋
+556. fa'tigue n.疲劳值 
