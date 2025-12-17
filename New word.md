@@ -550,3 +550,5 @@
 550. the key wrinkle 关键点
 551. aisle n.过道
 552. terra n.土地
+553. guild n.工会
+554. zesty adj.兴致很高的 v.给....增添乐趣 
