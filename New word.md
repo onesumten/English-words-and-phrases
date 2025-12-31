@@ -554,3 +554,4 @@
 554. zesty adj.兴致很高的 v.给....增添乐趣
 555. dispo'sition n.气质,天赋
 556. fa'tigue n.疲劳值 
+557. pre'velant=popular adj.盛行的
