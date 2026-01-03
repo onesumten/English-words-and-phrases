@@ -24,7 +24,7 @@
 24. divert v.使转向,转移(注意力),娱乐
 25. po'lemical adj.激烈争辩的
 26. utensils n.器皿，餐具
-27. invoke v.援引，祈求
+27. in'svoke v.援引，祈求
 28. contend v.竞争，认为，主张
 29. impose v.强制实行
 30. replicate v.复现
