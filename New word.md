@@ -560,3 +560,4 @@
 560. sensible adj.理智的,朴素的,可感觉到的
 561. put up with 忍受
 562. com'pulsory adj.必须做的,强制的
+563. con'catenate v.连接(首位相连接，例如"Hello"+"World"="HelloWorld")
