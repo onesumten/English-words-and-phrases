@@ -559,3 +559,4 @@
 559. dictate v.命令,支配,规定,口述
 560. sensible 理智的,朴素的,可感觉到的
 561. put up with 忍受
+562. com'pulsory adj.必须做的,强制的
