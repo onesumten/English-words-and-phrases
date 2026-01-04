@@ -15,3 +15,10 @@ ehco yourHostName > /etc/hostname
 
 # Disk
 * lsblk: Showing a list of disk you have now.
+
+# Expand your font size of your screen
+```
+setfont -d
+```
+* setfont: the command of set font
+* -d: double your font size
