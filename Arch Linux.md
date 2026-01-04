@@ -15,6 +15,9 @@ ehco yourHostName > /etc/hostname
 
 # Disk
 * lsblk: Showing a list of disk you have now.
+* /mnt: 
+* /boot:
+* /home:
 
 # Expand your font size of your screen
 ```
