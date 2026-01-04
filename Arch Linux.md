@@ -28,43 +28,43 @@ setfont -d
 * -d: double your font size
 
 # Creat a Swap File instead of Swap partition
-## 创建交换文件 (分配空间)
-* 我们创建一个 8GB 的文件。在终端输入：
+## Create the Swap File(Allocate Space)
+* Create an 8GB file by entering the following in the terminal:
 ```
 dd if=/dev/zero of=/swapfile bs=1M count=8192 status=progress
 ```
-* if=/dev/zero: 读取零填充。
-* of=/swapfile: 在根目录下创建一个名为 swapfile 的文件。
-* bs=1M count=8192: 1M * 8192 = 8GB。
-## 设置权限 (安全保护)
-* 交换文件记录的是内存里的数据，必须严格限制权限，否则会有安全隐患：
+* if=/dev/zero: Reads zeroed data (null characters) as the input source.
+* of=/swapfile: Creates a file named swapfile in the root directory.
+* bs=1M count=8192: Block size of 1M $\times$ 8192 blocks = 8GB.
+## Set Permissions(Security Protection)
+* Since the swap file records data from the RAM, permissions must be strictly restricted to prevent security risks:
 ```
 chmod 600 /swapfile
 ```
-* 这确保了只有 root 用户可以读写这个文件。
-## 格式化为交换格式
-* 告诉系统这个文件不是普通文本，而是交换空间：
+* This ensures that only the root user has read and write privileges for this file.
+## Format as Swap Space
+* Tell the system that this file is not a regular text file, but a designated swap area:
 ```
 mkswap /swapfile
 ```
-## 启用交换文件
-* 让系统立刻开始使用它：
+## Enable the Swap File
+* Command the system to start using the swap file immediately:
 ```
 swapon /swapfile
 ```
-## 永久挂载 (最关键的一步)
-* 如果不把这一行写进 fstab，重启后 Swap 就消失了
-  * 打开配置文件：
+## Persistent Mounting(The Critical Step)
+* If you do not add this entry to __fstab__, the Swap will disappear after a reboot.
+  * Open the configuration file:
   ```
   nano /etc/fstab
   ```
-  * 在文件的最后一行，添加以下内容：
+  * Add the following line at the very end of the file:
   ```
   /swapfile none swap defaults 0 0
   ```
-## 验证
-* 输入以下命令，你应该能看到一行关于 /swapfile 的记录：
+## Verification
+* Enter the following command; you should see a record for __/swapfile__:
 ```
 swapon --show
 ```
-* 或者输入 free -h，看 Swap 那一行是否显示为 8.0G。
+* Alternatively, run __free -h__ and check if the Swap row displays 8.0Gi.
