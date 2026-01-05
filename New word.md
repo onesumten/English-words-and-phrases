@@ -562,3 +562,4 @@
 562. com'pulsory adj.必须做的,强制的
 563. con'catenate v.连接(首位相连接，例如"Hello"+"World"="HelloWorld")
 564. excel v.表现出色 adj.优秀的
+565. brink n.边缘
