@@ -1,3 +1,22 @@
+# Pacman Command Logic
+| Flag | Full Name | Description | Common use cases
+| :-- | :-- | :-- | :--
+| -S | Sync | Synchronizes with remote repositories. | Installing new apps, updating the system (-Syu), searching the repo.
+| -Q | Query | Searches the local package database. | Listing installed apps, checking if a package exists on your disk.
+| -R | Remove | Removes packages from the system. | Uninstalling software and its configuration (if specified).
+| -U | Upgrade | Installs a local file or from a URL. | Installing a *.pkg.tar.zst* file you downloaded manually.
+## Synchronize (Sync) Modifiers
+* -y (refresh): Downloads a fresh copy of the master package database from the server.
+* -u (sysupgrade): Upgrades all packages that are out of date.
+* -s (search): Searches for packages in the remote repositories.
+## Query Modifiers
+* -i (info): Shows detailed information about a package (size, install date, description).
+* -l (list): Lists all files owned by that package (the command we used to find init).
+## Remove Modifiers
+* -s (recursive): Removes a package and all its dependencies (as long as they aren't used by other apps).
+* -n (nosave): Tells pacman to remove configuration files too (doesn't create .pacsave files).
+  
+### *Rule of Thumb: If the action involves the Internet/Server, start with -S. If the action involves Your Hard Drive, start with -Q, -R, or -U.*
 # Modify the hostname
 Whatever this is the first time or the second time to modify the hostname, you can use below code:
 ```
@@ -20,7 +39,7 @@ ehco yourHostName > /etc/hostname
 * /home: The user directory.
 * /etc: Store the configuration of your computer and operating system.
 
-| 文件或目录路径 | 功能描述 |
+| File or Directory PATH | Function description |
 | :--- | :--- |
 | `/etc/fstab` | 规定系统启动时如何挂载硬盘分区。 |
 | `/etc/passwd` | 存储系统中所有用户的基本信息。 |
@@ -99,6 +118,12 @@ systemctl enable --now NetworkManager
 * --now: This is a flag that tells systemd to start the service immediately in the current session. Without this flag, enable would only take effect after the next reboot.
 * NetworkManager: The specific daemon (background service) responsible for detecting and configuring network connections (WiFi, Ethernet, VPNs).
 
+# Connecting to Internet via NetworkManager
+* Tool: nmtui — A user-friendly, cursor-based interface for managing networks.
+```
+nmtui
+```
+
 # Exporting Package Lists
 ```
 pacman -Qeq > list
@@ -112,3 +137,72 @@ pacman -Syu -- < list
 ```
 * --(Double Dash): A universal Linux convention that marks the end of command options. Everything following it is treated as a positional argument (like a filename or package name), preventing accidental misinterpretation of names starting with a hyphen.
 * <(Redirection): Redirects the contents of a file into the command's standard input.
+
+# Cleaning Package Cache
+```
+# Safely remove old, unused package versions (keeps the current one)
+sudo pacman -Sc
+
+# Forcefully remove ALL cached packages (nuclear option)
+sudo pacman -Scc
+```
+* Pro Tip: It's good practice to run sudo pacman -Sc once a month to reclaim disk space, especially on smaller SSDs.
+
+# River Environment Components
+* River is a **dynamic tiling compositor**(动态平铺合成器) based on the Wayland protocol.
+* It manages windows using a **layout generator** and a flexible **tag system** instead of traditional workspaces.
+
+| Component | Software | Purpose
+| :--- | :--- | :---
+| Terminal | foot | The primary interface for command input.
+| Status Bar | waybar | Visual indicators for tags, battery, and clock.
+| Launcher | fuzzel | Quick search and launch for GUI applications.
+| Auth Agent | polkit-gnome | Handles graphical password prompts for sudo actions.
+
+## Intel Graphics Drivers Installation
+* 这条命令是 Linux（特别是 Arch Linux 及其衍生版，如 Manjaro）中用于安装 Intel 显卡驱动和 Vulkan 图形接口支持的指令。简单来说，如果你使用的是 Intel 集成显卡（比如笔记本电脑自带的显卡），这条命令能确保你的系统具备运行 3D 游戏、高清视频加速和现代图形应用的能力。
+```
+sudo pacman -S mesa lib32-mesa vulkan-intel
+```
+* mesa: 开源的图形驱动核心。它包含 OpenGL 和 Vulkan 驱动，让显卡能理解绘图指令。
+* lib32-mesa: `mesa`的32位版本。主要用于运行旧应用或通过 Steam 运行 32 位游戏。
+  ```
+  target not found: lib32-mesa
+  ```
+  * 通常是因为系统尚未启用 multilib 存储库。
+  * 进入`nano /etc/pacman.conf`
+  * 找到下面的内容
+  ```
+  #[multilib]
+  #Include = /etc/pacman.d/mirrorlist
+  ```
+  * 去掉`#`这个注释
+  * 更改配置文件后，必须让系统重新读取远程仓库的索引
+  ```
+  pacman -Syu
+  ```
+* vulkan-intel: Intel 显卡的 Vulkan 实现。Vulkan 是比 OpenGL 更现代、更高效的绘图接口。
+
+## Locating Files within a Package
+```
+pacman -Ql river | grep init
+```
+* -Q (Query): Operates on the local package database.
+* -l (List): Lists all files owned by the specified package.
+* | (Pipe): Redirects the output to the next command.
+* grep [keyword]: Filters the list to show only lines containing the keyword.
+* -Ql 是“地毯式搜索”：它会列出包在系统里留下的每一个脚印（包括二进制文件、库文件、文档、协议等）。
+* 配合 grep 是“精准定位”：
+  * 如果你想找 River 的手册页在哪里：`pacman -Ql river | grep man`
+  * 如果你想找 River 的可执行文件在哪里：`pacman -Ql river | grep bin`
+  * 如果你想找 River 的默认配置示例：`pacman -Ql river | grep examples`
+
+## Execute the init file
+
+```
+chmod +x ~/.config/river/init
+```
+* When you modify the init file at `~/.config/river/init`, you must use the above command. 
+* In river, the init file is executed as a shell script, not just read as a static config file. If the file lacks executable permissions, river will fail to load your keybindings, leaving you unable to interact with the compositor.
+
+
