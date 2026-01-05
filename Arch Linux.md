@@ -15,10 +15,20 @@ ehco yourHostName > /etc/hostname
 
 # Disk
 * lsblk: Showing a list of disk you have now.
-* /mnt: 
-* /boot:
-* /home:
-* /etc
+* /mnt: The root director(sometimes you will see this as **/**).
+* /boot: To power up the computer and load the operating system into this active memory.
+* /home: The user directory.
+* /etc: Store the configuration of your computer and operating system.
+
+| 文件或目录路径 | 功能描述 |
+| :--- | :--- |
+| `/etc/fstab` | 规定系统启动时如何挂载硬盘分区。 |
+| `/etc/passwd` | 存储系统中所有用户的基本信息。 |
+| `/etc/pacman.conf` | **Arch Linux 特有**：配置软件包管理器的镜像源和行为。 |
+| `/etc/hostname` | 存储你给这台电脑起的名字。 |
+| `/etc/sudoers` | 控制哪些用户可以使用 `sudo` 命令获取管理员权限。 |
+| `/etc/ssh/` | 存放远程登录 (SSH) 的相关加密密钥和配置。 |
+| `/etc/systemd/` | 存放系统服务 (Services) 的启动和管理配置。 |
 
 # Expand your font size of your screen
 ```
