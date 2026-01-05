@@ -37,6 +37,14 @@ setfont -d
 * setfont: the command of set font
 * -d: double your font size
 
+# Updating Package Databases and Installed Software
+```
+sudo pacman -Syu
+```
+* -S(Sync): Tell the package manager(pacman) to synchronize packages from the remote pository.
+* -y(refresh): Download a fresh copy of the master package database from the server.
+* -u(Sysupgrade): Upgrades all installed packages that have a new version available.
+
 # Creat a Swap File instead of Swap partition
 ## Create the Swap File(Allocate Space)
 * Create an 8GB file by entering the following in the terminal:
@@ -78,3 +86,29 @@ swapon /swapfile
 swapon --show
 ```
 * Alternatively, run __free -h__ and check if the Swap row displays 8.0Gi.
+
+# Network Service Configuration (Persistence & Activation)
+* The following command is used to manage systemd units (services) to ensure networking is available both immediately and across reboots.
+```
+systemctl enable --now NetworkManager
+```
+* systemctl: The primary command-line utility for controlling the systemd __init system and service manager__.
+  * When you need open or install **Servie** like ssh. You need this. 
+  * If you install **Tools** like vim, python. You don't need this. 
+* enable: This configures the service to start automatically at boot. Technically, it creates a symbolic link (symlink) from the service file (usually in /usr/lib/systemd/system/) to the location where systemd looks for autostart scripts (usually in /etc/systemd/system/). 
+* --now: This is a flag that tells systemd to start the service immediately in the current session. Without this flag, enable would only take effect after the next reboot.
+* NetworkManager: The specific daemon (background service) responsible for detecting and configuring network connections (WiFi, Ethernet, VPNs).
+
+# Exporting Package Lists
+```
+pacman -Qeq > list
+```
+* -e(Explicit): Filters out dependencies; shows only what you specifically asked to install.
+* -q(Quiet): Strips version numbers for a clean list of names.
+
+# Bulk Package Installation
+```
+pacman -Syu -- < list
+```
+* --(Double Dash): A universal Linux convention that marks the end of command options. Everything following it is treated as a positional argument (like a filename or package name), preventing accidental misinterpretation of names starting with a hyphen.
+* <(Redirection): Redirects the contents of a file into the command's standard input.
