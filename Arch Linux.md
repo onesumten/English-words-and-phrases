@@ -152,12 +152,18 @@ sudo pacman -Scc
 * River is a **dynamic tiling compositor**(动态平铺合成器) based on the Wayland protocol.
 * It manages windows using a **layout generator** and a flexible **tag system** instead of traditional workspaces.
 
+## 安装 River 及其必不可少的配套工具：
+```
+sudo pacman -S river waybar foot wmenu
+```
 | Component | Software | Purpose
 | :--- | :--- | :---
 | Terminal | foot | The primary interface for command input.
 | Status Bar | waybar | Visual indicators for tags, battery, and clock.
-| Launcher | fuzzel | Quick search and launch for GUI applications.
-| Auth Agent | polkit-gnome | Handles graphical password prompts for sudo actions.
+| Launcher | wmenu | Quick search and launch for GUI applications.
+| Layout Manager | rivertile | River 默认自带的插件，决定窗口是以“主从模式”还是其他方式平铺。
+| Notification center | mako | 轻量化的通知守护进程，在右上角以简洁的方框提示系统信息。
+| 屏幕截图 | grim / slurp | Wayland 下的标准截图工具，grim 负责抓取，slurp 负责选区。
 
 ## Intel Graphics Drivers Installation
 * 这条命令是 Linux(特别是 Arch Linux 及其衍生版，如 Manjaro)中用于安装 Intel 显卡驱动和 Vulkan 图形接口支持的指令。简单来说，如果你使用的是 Intel 集成显卡（比如笔记本电脑自带的显卡），这条命令能确保你的系统具备运行 3D 游戏、高清视频加速和现代图形应用的能力。
@@ -205,4 +211,28 @@ chmod +x ~/.config/river/init
 * When you modify the init file at `~/.config/river/init`, you must use the above command. 
 * In river, the init file is executed as a shell script, not just read as a static config file. If the file lacks executable permissions, river will fail to load your keybindings, leaving you unable to interact with the compositor.
 
-
+## `&` : Run in background
+```
+waybar &
+```
+1. Non-blocking
+* Use `&` can let waybar give the control power to the terminal, this way can let you use terminal. If you use `waybr` without `&`, you cann't control your terminal when the `waybar` is running.
+# Seatd service handbook
+1. 什么是 seatd？
+* seatd 是一个极简的本地座席(Seat)管理器。它负责让非 root 用户也能安全地访问显卡(GPU)、输入设备(键盘/鼠标)等硬件资源。
+* 在运行 River、Sway 或 Hyprland 时，如果你没有启动这个服务，系统会报错 Failed to open seat 或导致输入设备无法识别(快捷键无反应)。
+1. Procedure
+* Install seatd service
+```
+sudo pacman -S seatd
+```
+* Launch immediately and Launch every single time
+```
+sudo systemctl enable --now seatd
+```
+* 将用户加入 seat 组
+* $USER：代表你当前登录的用户名。
+* -aG seat：表示将用户追加到 seat 用户组中。
+```
+sudo usermod -aG seat $USER
+```
