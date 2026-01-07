@@ -160,7 +160,7 @@ sudo pacman -Scc
 | Auth Agent | polkit-gnome | Handles graphical password prompts for sudo actions.
 
 ## Intel Graphics Drivers Installation
-* 这条命令是 Linux（特别是 Arch Linux 及其衍生版，如 Manjaro）中用于安装 Intel 显卡驱动和 Vulkan 图形接口支持的指令。简单来说，如果你使用的是 Intel 集成显卡（比如笔记本电脑自带的显卡），这条命令能确保你的系统具备运行 3D 游戏、高清视频加速和现代图形应用的能力。
+* 这条命令是 Linux(特别是 Arch Linux 及其衍生版，如 Manjaro)中用于安装 Intel 显卡驱动和 Vulkan 图形接口支持的指令。简单来说，如果你使用的是 Intel 集成显卡（比如笔记本电脑自带的显卡），这条命令能确保你的系统具备运行 3D 游戏、高清视频加速和现代图形应用的能力。
 ```
 sudo pacman -S mesa lib32-mesa vulkan-intel
 ```
