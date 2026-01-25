@@ -565,3 +565,4 @@
 565. brink n.边缘
 566. strip v.剥去，剥夺 n.带
 567. en'deavor v.努力，尝试 
+568. volatile adj.不稳定的，易挥发的
