@@ -566,3 +566,6 @@
 566. strip v.剥去，剥夺 n.带
 567. en'deavor v.努力，尝试 
 568. volatile adj.不稳定的，易挥发的
+569. qualifier n.限定词
+570. di'fferentiate v.区分,使不同 v.使具有特色
+571. silicon n.硅
