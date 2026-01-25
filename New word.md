@@ -564,3 +564,4 @@
 564. excel v.表现出色 adj.优秀的
 565. brink n.边缘
 566. strip v.剥去，剥夺 n.带
+567. en'deavor v.努力，尝试 
