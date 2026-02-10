@@ -569,3 +569,4 @@
 569. qualifier n.限定词
 570. di'fferentiate v.区分,使不同 v.使具有特色
 571. silicon n.硅
+572. aspi'ration n.志向，抱负
